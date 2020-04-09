@@ -1,0 +1,23 @@
+
+{% extends 'layout.twig' %}
+
+{% block title %}
+    Product 1
+{% endblock %}
+
+{% block content %}
+<table>
+    <thead>
+        <th>Id</th>
+        <th>Product</th>
+        <th>Feature</th>
+    </thead>
+{% for item in result %}
+    <tr>
+        <td>{{ item.id }}</td>
+        <td>{{ item.name }}</td>
+        <td>{{ item.f_name }}</td>
+    </tr>
+{% endfor %}
+</table>
+{% endblock %}

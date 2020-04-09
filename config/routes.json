@@ -1,0 +1,24 @@
+{
+    "products/:page": {
+      "controller": "Book",
+      "method": "getAllWithPage",
+      "params": {
+        "page": "number"
+      }
+    },
+    "products": {
+      "controller": "Product",
+      "method": "getAll"
+    },
+    "product/:id": {
+      "controller": "Product",
+      "method": "returnProduct",
+      "params": {
+        "id": "number"
+      }
+    },
+    "login": {
+      "controller": "Customer",
+      "method": "login"
+    }
+  }
