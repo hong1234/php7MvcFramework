@@ -36,8 +36,6 @@ $dbParams = array(
     'host' => '127.0.0.1',
     'port' => '3306',
     'dbname'   => 'bookstore',
-    //'user'     => 'root',
-    //'password' => 'vuanh123',
     'user'     => $dbConfig['user'],
     'password' => $dbConfig['password'],
     
